@@ -1,0 +1,1 @@
+export const PRINTER_CLIENT_VERSION = "T50-2026-09-27.3";

@@ -1,0 +1,1 @@
+ALTER TABLE `register_members` ADD `role` text DEFAULT 'contributor' NOT NULL;
