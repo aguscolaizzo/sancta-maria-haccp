@@ -93,6 +93,7 @@ import { canAdministerRegister, type RegisterSession } from "@/lib/access-types"
 import TeamPanel from "./team-panel";
 import LabelsPanel from "./labels-panel";
 import ExpiryAlerts from "./expiry-alerts";
+import AssistantPanel from "./assistant-panel";
 import WeeklyReportLauncher from "./weekly-report-launcher";
 
 const TemperatureCharts = lazy(() => import("./temperature-charts"));
@@ -652,6 +653,7 @@ export default function FrigoApp({ session }: { session: RegisterSession }) {
           </div>
         )}
         <ExpiryAlerts />
+        <AssistantPanel onNavigate={setTab} />
         {loadError && (
           <div className="notice error no-print" role="alert">
             <AlertTriangle size={18} />
